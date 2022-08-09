@@ -5,7 +5,7 @@ let numero = 25;
 console.log("El numero es",numero);
 console.log(`El numero es ${numero}`);
 
-let nombre="Papi RIKO";
+let nombre="johan";
 
 console.log("Mi nombre es",nombre);
 console.log(`Mi nombre es ${nombre}`);
@@ -107,5 +107,5 @@ switch(operaciones){
         window.alert("no elegiste");
 }
 
-console.log("El primero es ${num1}");
-console.log("El segundo es ${num2}");
+console.log(`El primero es ${num1}`);
+console.log(`El segundo es ${num2}`);
