@@ -77,34 +77,34 @@ let operaciones=prompt("¿que operacion elige?");
 switch(operaciones){
  case "suma": 
      resultado= parseInt(num1) + num2;
-     window.alert("Tu suma es: ${resultado}")
+     window.alert(`Tu suma es: ${resultado}`)
     break;
     case "resta":
     resultado= num1 - num2;
-    window.alert("Tu resta es: ${resultado}")
+    window.alert(`Tu resta es:${resultado}`)
     break;
     case "multiplicacion":
     resultado= num1 * num2;
-    window.alert("Tu multiplicacion es: ${resultado}")
+    window.alert(`Tu multiplicacion es: ${resultado}`)
     break;
     case "division":
     resultado= num1 / num2;
-    window.alert("Tu division es: ${resultado}")
+    window.alert(`Tu division es: ${resultado}`)
     break;
     case "raiz1":
     resultado= Math.sqrt(num1).toFixed(3);
-    window.alert("Tu raiz del primer numero es: ${resultado}")
+    window.alert(`Tu raiz del primer numero es: ${resultado}`)
     break;
     case "raiz2":
         resultado= Math.sqrt(num1).toFixed(3);
-        window.alert("Tu raiz del primer numero es: ${resultado}")
+        window.alert(`Tu raiz del primer numero es: ${resultado}`)
         break;
     case "potencia":
     resultado= Math.pow(num1,num2);
-    window.alert("Tu potenciacion es: ${resultado}")
+    window.alert(`Tu potenciacion es: ${resultado}`)
     break;
     default:
-        window.alert("no elegiste");
+        window.alert(`no elegiste`);
 }
 
 console.log(`El primero es ${num1}`);
