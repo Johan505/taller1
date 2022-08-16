@@ -7,6 +7,8 @@ while(resp==true){
     function random(min, max){
         return Math.floor(Math.random() * (max- min) + min);
     }
+
+    cont=cont+1
     
     let pregunta=prompt("¿Desea apostar?");
 
@@ -17,7 +19,7 @@ while(resp==true){
 
     console.log(dinero)
     apuesta=apuesta+dinero;
-    cont=cont+1
+    
 
     
 
