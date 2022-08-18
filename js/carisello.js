@@ -8,6 +8,8 @@ while(resp==true){
         return Math.floor(Math.random() * (max- min) + min);
     }
 
+    
+
     cont=cont+1
     
     let pregunta=prompt("¿Desea apostar?");
