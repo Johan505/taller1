@@ -4,7 +4,22 @@ function calcular(){
     let op=document.getElementById("operacion").value;
 
     if(op==1){
-        let res=num1+num2;
-        alert(`El numero 1 es ${num1} y el numero 2 ${num2} la suma es ${res}`);
+        let sum=num1+num2;
+        alert(`El numero 1 es ${num1} y el numero 2 ${num2} la suma es ${sum}`);
+    }
+
+    else if(op==2){
+        let res=num1-num2;
+        alert(`El numero 1 es ${num1} y el numero 2 ${num2} la resta es ${res}`)
+    }
+
+    else if(op==3){
+        let mul=num1*num2;
+        alert(`El numero 1 es ${num1} y el numero 2 ${num2} la multiplicación es ${mul}`)
+    }
+
+    else if(op==4){
+        let div=num1/num2;
+        alert(`El numero 1 es ${num1} y el numero 2 ${num2} la división es ${div}`)
     }
 }
