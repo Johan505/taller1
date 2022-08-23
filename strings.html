@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String</title>
+</head>
+<body>
+
+    <div class="container">
+    <section class="dashboard">
+        <h1>Ejercicios</h1>
+
+        <div class="options_menu">
+            
+            <a href="#">
+                <div class="opcion">
+                    <h6>Ejercicio 1</h6>
+                </div>
+            </a>
+
+
+            <a href="#">
+                <div class="opcion">
+                    <h6>Ejercicio 2</h6>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="opcion">
+                    <h6>Ejercicio 3</h6>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="opcion">
+                    <h6>Ejercicio 4</h6>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="opcion" id="exit">
+                    <h6>Ejercicio 5</h6>
+                </div>
+            </a>
+            
+        </div>
+
+    </section>
+
+    <div class="container-form">
+    <section class="formularios">
+        <h1>Calculadora</h1>
+        <form class="formulario">
+            <div class="group-form">
+            <label for="palabra" class="form-label">Ingresa una palabra</label>
+            <input type="text" class="form-control" id="palabra">
+            </div>
+
+            <div class="group-form">
+                <select class="form-select" id="operacion">
+                    <option selected><label>Selecciona una opción</label></option>
+                    <option value="1">Longitud de la palabra</option>
+                    <option value="2">La palabra convertida en mayúsculas</option>
+                    <option value="3">La palabra convertida en minúsculas</option>
+                    <option value="4">El primer carácter de la palabra</option>
+                </select>
+            </div>
+            <button type="submit" class="btn-azul" onclick="calcular()">Calcular</button>
+        </form>
+    </div>
+</div>
+    </section>
+    <script src="js/strings.js"></script>
+</body>
+</html>
