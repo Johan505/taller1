@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grados</title>
+    <title>Triángulo</title>
 </head>
 <body>
 
@@ -52,31 +52,26 @@
 
     <div class="container-form">
     <section class="formularios">
-        <h1>Grados</h1>
+        <h1>Calculadora</h1>
         <form class="formulario">
             <div class="group-form">
-            <label for="num1" class="form-label">Ingresa los grados</label>
+            <label for="num1" class="form-label">Ingresa un número</label>
             <input type="number" class="form-control" id="num1">
             </div>
-
-
+            
             <div class="group-form">
-                <h4>Vas a convertir de:</h4>
-                <select class="form-select" id="operacion">
-                    <option selected><label>Selecciona una opción</label></option>
-                    <option value="1">Fahrenheit</option>
-                    <option value="2">Celsius</option>
-                    <option value="3">Kelvin</option>
-                </select>
+                <label for="num2" class="form-label">Ingresa otro número</label>
+                <input type="number" class="form-control" id="num2">
             </div>
 
+
             <div class="group-form">
-                <h4>Vas a convertir a:</h4>
-                <select class="form-select" id="operacion1">
-                    <option selected><label>Selecciona una opción</label></option>
-                    <option value="1">Fahrenheit</option>
-                    <option value="2">Celsius</option>
-                    <option value="3">Kelvin</option>
+                <select class="form-select" id="operacion">
+                    <option selected><label>Selecciona una operación</label></option>
+                    <option value="1">Suma</option>
+                    <option value="2">Resta</option>
+                    <option value="3">Multiplicación</option>
+                    <option value="4">División</option>
                 </select>
             </div>
             <button type="submit" class="btn-azul" onclick="calcular()">Calcular</button>
@@ -84,6 +79,6 @@
     </div>
 </div>
     </section>
-    <script src="js/grados.js"></script>
+    <script src="js/triangulo.js"></script>
 </body>
 </html>
