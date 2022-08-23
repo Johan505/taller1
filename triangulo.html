@@ -10,70 +10,65 @@
 <body>
 
     <div class="container">
-    <section class="dashboard">
-        <h1>Ejercicios</h1>
-
-        <div class="options_menu">
-            
-            <a href="#">
-                <div class="opcion">
-                    <h6>Ejercicio 1</h6>
-                </div>
-            </a>
-
-
-            <a href="#">
-                <div class="opcion">
-                    <h6>Ejercicio 2</h6>
-                </div>
-            </a>
-
-            <a href="#">
-                <div class="opcion">
-                    <h6>Ejercicio 3</h6>
-                </div>
-            </a>
-
-            <a href="#">
-                <div class="opcion">
-                    <h6>Ejercicio 4</h6>
-                </div>
-            </a>
-
-            <a href="#">
-                <div class="opcion" id="exit">
-                    <h6>Ejercicio 5</h6>
-                </div>
-            </a>
-            
-        </div>
-
-    </section>
+        <section class="dashboard">
+            <h1>Ejercicios</h1>
+    
+            <div class="options_menu">
+                
+                <a href="calculadora.html">
+                    <div class="opcion">
+                        <h6>Calculadora</h6>
+                    </div>
+                </a>
+    
+    
+                <a href="strings.html">
+                    <div class="opcion">
+                        <h6>Palabra</h6>
+                    </div>
+                </a>
+    
+                <a href="grados.html">
+                    <div class="opcion">
+                        <h6>Grados</h6>
+                    </div>
+                </a>
+    
+                <a href="triangulo.html">
+                    <div class="opcion">
+                        <h6>Triángulo</h6>
+                    </div>
+                </a>
+    
+                <a href="#">
+                    <div class="opcion" id="exit">
+                        <h6>Ejercicio 5</h6>
+                    </div>
+                </a>
+                
+            </div>
+    
+        </section>
 
     <div class="container-form">
     <section class="formularios">
-        <h1>Calculadora</h1>
+        <h1>Triángulo</h1>
         <form class="formulario">
             <div class="group-form">
-            <label for="num1" class="form-label">Ingresa un número</label>
-            <input type="number" class="form-control" id="num1">
+            <label for="base" class="form-label">Base</label>
+            <input type="number" class="form-control" id="base">
             </div>
             
             <div class="group-form">
-                <label for="num2" class="form-label">Ingresa otro número</label>
+                <label for="num2" class="form-label">Lado 2</label>
                 <input type="number" class="form-control" id="num2">
             </div>
 
-
             <div class="group-form">
-                <select class="form-select" id="operacion">
-                    <option selected><label>Selecciona una operación</label></option>
-                    <option value="1">Suma</option>
-                    <option value="2">Resta</option>
-                    <option value="3">Multiplicación</option>
-                    <option value="4">División</option>
-                </select>
+                <label for="num3" class="form-label">Lado 3</label>
+                <input type="number" class="form-control" id="num3">
             </div>
+
             <button type="submit" class="btn-azul" onclick="calcular()">Calcular</button>
         </form>
     </div>
