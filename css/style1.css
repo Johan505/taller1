@@ -1,0 +1,20 @@
+button{
+    background-color: aqua;
+}
+
+#respuesta{
+    visibility: hidden;
+    opacity: 0;
+}
+
+.correcto{
+    background-color: green;
+    visibility: visible;
+    opacity: 1;
+}
+
+.incorrecto{
+    background-color: red;
+    visibility: visible;
+    opacity: 1;
+}

@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style1.css">
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
 </head>
@@ -74,9 +76,21 @@
                     <option value="4">División</option>
                 </select>
             </div>
-            <button type="submit" class="btn-azul" onclick="calcular()">Calcular</button>
+            <button type="submit" class="btn-azul" id="boton">Calcular</button>
         </form>
+
+        <div id="ops">
+            <button id="suma">Suma</button>
+            <button id="resta">Resta</button>            
+        </div>
+
+        <div id="respuesta">
+
+        </div>
+
     </div>
+
+    
 </div>
     </section>
     <script src="js/calculadora.js"></script>
