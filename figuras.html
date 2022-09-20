@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gatos</title>
+</head>
+<body>
+
+    <div class="container">
+        <section class="dashboard">
+            <h1>Ejercicios</h1>
+    
+            <div class="options_menu">
+                
+                <a href="calculadora.html">
+                    <div class="opcion">
+                        <h6>Calculadora</h6>
+                    </div>
+                </a>
+    
+    
+                <a href="strings.html">
+                    <div class="opcion">
+                        <h6>Palabra</h6>
+                    </div>
+                </a>
+    
+                <a href="grados.html">
+                    <div class="opcion">
+                        <h6>Grados</h6>
+                    </div>
+                </a>
+    
+                <a href="triangulo.html">
+                    <div class="opcion">
+                        <h6>Triángulo</h6>
+                    </div>
+                </a>
+    
+                <a href="profesores.html">
+                    <div class="opcion" id="exit">
+                        <h6>Profesores</h6>
+                    </div>
+                </a>
+    
+                <a href="figuras.html">
+                    <div class="opcion" id="exit">
+                        <h6>Figuras</h6>
+                    </div>
+                </a>
+    
+                <a href="validacion.html">
+                    <div class="opcion" id="exit">
+                        <h6>Formulario</h6>
+                    </div>
+                </a>
+                
+            </div>
+    
+        </section>
+
+        <div class="cards">
+        <div class="card">
+          <img src="img/circulo.png" alt="Avatar" style="width:100%">
+          <div class="contenedor">
+            <h4><b>Círculo</b></h4> 
+            <div class="modales">
+            <button id="abrirModal-cir">Perímetro</button>
+            <button id="abrirModal-cir-area">Área</button> 
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+            <img src="img/triangulo.png" alt="Avatar" style="width:100%">
+            <div class="contenedor">
+              <h4><b>Triángulo</b></h4> 
+              <div class="modales">
+              <button id="abrirModal-tri">Perímetro</button>
+              <button id="abrirModal-tri-area">Área</button> 
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="img/rectangulo.png" alt="Avatar" style="width:100%">
+            <div class="contenedor">
+              <h4><b>Rectángulo</b></h4> 
+              <div class="modales">
+              <button id="abrirModal-rec">Perímetro</button>
+              <button id="abrirModal-rec-area">Área</button> 
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="img/cuadrado-png-108-images-in-collection-page-3-cuadrado-png-1000_1000.png" alt="Avatar" style="width:100%">
+            <div class="contenedor">
+              <h4><b>Cuadrado</b></h4> 
+              <div class="modales">
+              <button id="abrirModal">Perímetro</button>
+              <button id="abrirModal-area">Área</button> 
+              </div>
+            </div>
+          </div>
+    </div>
+    <div id="ventanaModal" class="modal">
+        <div class="contenidoModal">
+  
+           <span class="cerrarModal"><i class="fa-solid fa-xmark"></i></span>
+           <h2>Perimetro del cuadrado</h2>
+           <label for="">Lado </label><br>
+           <input id="lado" type="number" placeholder="Digite el lado del cuadrado"><br>
+           <button class="btn" id="btn">Calcular</button>
+  
+           <div id="res">
+  
+  
+           </div>
+  
+  
+        </div>
+  
+     </div>
+  
+     <div id="ventanaModal-area" class="modal">
+        <div class="contenidoModal">
+  
+           <span class="cerrarModal-area"><i class="fa-solid fa-xmark"></i></span>
+           <h2>Area del cuadrado</h2>
+           <label for="">base </label><br>
+           <input id="cua-base" type="number" placeholder="Digite la base del cuadrado"><br>
+           <label for="">Altura </label><br>
+           <input id="cua-altura" type="number" placeholder="Digite la altura del cuadrado"><br>
+           <button class="btn" id="btn-area">Calcular</button>
+  
+           <div id="res1">
+  
+  
+           </div>
+  
+  
+        </div>
+  
+     </div>
+  
+     <div id="ventanaModal-rec" class="modal">
+        <div class="contenidoModal">
+  
+           <span class="cerrarModal-rec"><i class="fa-solid fa-xmark"></i></span>
+           <h2>Perimetro rectangulo</h2>
+           <label for="">Base </label><br>
+           <input id="rec-base" type="number" placeholder="Digite la base del rectangulo"><br>
+           <label for="">Altura </label><br>
+           <input id="rec-altura" type="number" placeholder="Digite la altura del rectangulo"><br>
+           <button class="btn" id="btn-rec">Calcular</button>
+  
+           <div id="res2">
+  
+  
+           </div>
+  
+  
+        </div>
+  
+     </div>
+  
+     <div id="ventanaModal-rec-area" class="modal">
+        <div class="contenidoModal">
+  
+           <span class="cerrarModal-rec-area"><i class="fa-solid fa-xmark"></i></span>
+           <h2>Area rectangulo</h2>
+           <label for="">Base </label><br>
+           <input id="rec-base-area" type="number" placeholder="Digite la base del rectangulo"><br>
+           <label for="">Altura </label><br>
+           <input id="rec-altura-area" type="number" placeholder="Digite la altura del rectangulo"><br>
+           <button class="btn" id="btn-rec-area">Calcular</button>
+  
+           <div id="res3">
+  
+  
+           </div>
+  
+  
+        </div>
+  
+     </div>
+  
+  
+     <div id="ventanaModal-tri" class="modal">
+        <div class="contenidoModal">
+  
+           <span class="cerrarModal-tri"><i class="fa-solid fa-xmark"></i></span>
+           <h2>Perimetro Triangulo</h2>
+           <label for="">Lado </label><br>
+           <input id="tri-lado1" type="number" placeholder="Digite el lado del triangulo"><br>
+           <label for="">Lado </label><br>
+           <input id="tri-lado2" type="number" placeholder="Digite el lado del triangulo"><br>
+           <label for="">Lado </label><br>
+           <input id="tri-lado3" type="number" placeholder="Digite el lado del triangulo"><br>
+           <button class="btn" id="btn-tri">Calcular</button>
+  
+           <div id="res-tri">
+  
+  
+           </div>
+  
+  
+        </div>
+  
+     </div>
+  
+     <div id="ventanaModal-tri1" class="modal">
+        <div class="contenidoModal">
+  
+           <span class="cerrarModal-tri-area"><i class="fa-solid fa-xmark"></i></span>
+           <h2>area Triangulo</h2>
+           <label for="">Base </label><br>
+           <input id="base-tri" type="number" placeholder="Digite la base del triangulo"><br>
+           <label for="">Altura </label><br>
+           <input id="altura-tri" type="number" placeholder="Digite la altura del triangulo"><br>
+          
+           <button class="btn" id="btn-tri1">Calcular</button>
+  
+           <div id="res-tri1">
+  
+  
+           </div>
+  
+  
+        </div>
+  
+     </div>
+  
+  
+     <div id="ventanaModal-cir" class="modal">
+        <div class="contenidoModal">
+  
+           <span class="cerrarModal-cir"><i class="fa-solid fa-xmark"></i></span>
+           <h2>Perimetro circulo</h2>
+           <label for="">Radio </label><br>
+           <input id="radio" type="number" placeholder="Digite el radio del circulo"><br>
+     
+           <button class="btn" id="btn-cir">Calcular</button>
+  
+           <div id="res-cir">
+  
+  
+           </div>
+  
+  
+        </div>
+  
+     </div>
+  
+  
+     <div id="ventanaModal-cir1" class="modal">
+        <div class="contenidoModal">
+  
+           <span class="cerrarModal-cir1"><i class="fa-solid fa-xmark"></i></span>
+           <h2>Area circulo</h2>
+           <label for="">Radio </label><br>
+           <input id="radio-area" type="number" placeholder="Digite el radio del circulo"><br>
+     
+           <button class="btn" id="btn-cir-area">Calcular</button>
+  
+           <div id="res-cir-area">
+  
+  
+           </div>
+  
+  
+        </div>
+  
+     </div>
+  
+
+    <script src="js/figuras.js"></script>
+    
+</body>
+</html>

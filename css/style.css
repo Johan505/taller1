@@ -61,12 +61,12 @@ body{
     border-bottom: 1px solid silver;
 }
 
-.formularios form{
+.formularios .formulario{
     padding: 40px;
     box-sizing: border-box;
 }
 
-form .group-form{
+.formulario .group-form{
     position: relative;
     border-bottom: 2px solid #adadad;
     margin: 30px 0;

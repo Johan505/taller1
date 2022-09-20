@@ -5,18 +5,18 @@ function calcular(){
     if(op==1){
 
         let word=palabra.length;
-        alert(`La longitud de la palabra es: ${word}`);
+        Swal.fire(`La longitud de la palabra es: ${word}`);
     }
 
     else if(op==2){
-        alert(`${palabra.toUpperCase()}`);
+        Swal.fire(`${palabra.toUpperCase()}`);
     }
 
     else if(op==3){
-        alert(`${palabra.toLowerCase()}`);
+        Swal.fire(`${palabra.toLowerCase()}`);
     }
 
     else if(op==4){
-        alert(`${palabra.charAt(0)}`);
+        Swal.fire(`${palabra.charAt(0)}`);
     }
 }

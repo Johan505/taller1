@@ -40,9 +40,21 @@
                     </div>
                 </a>
     
-                <a href="#">
+                <a href="profesores.html">
                     <div class="opcion" id="exit">
-                        <h6>Ejercicio 5</h6>
+                        <h6>Profesores</h6>
+                    </div>
+                </a>
+    
+                <a href="figuras.html">
+                    <div class="opcion" id="exit">
+                        <h6>Figuras</h6>
+                    </div>
+                </a>
+    
+                <a href="validacion.html">
+                    <div class="opcion" id="exit">
+                        <h6>Formulario</h6>
                     </div>
                 </a>
                 
@@ -53,7 +65,7 @@
     <div class="container-form">
     <section class="formularios">
         <h1>Grados</h1>
-        <form class="formulario">
+        <div class="formulario">
             <div class="group-form">
             <label for="num1" class="form-label">Ingresa los grados</label>
             <input type="number" class="form-control" id="num1">
@@ -80,10 +92,12 @@
                 </select>
             </div>
             <button type="submit" class="btn-azul" onclick="calcular()">Calcular</button>
-        </form>
+        </div>
     </div>
 </div>
     </section>
     <script src="js/grados.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>

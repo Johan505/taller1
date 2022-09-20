@@ -8,22 +8,22 @@
 
     if(op==1){
         let sum=num1+num2;
-        alert(`El numero 1 es ${num1} y el numero 2 ${num2} la suma es ${sum}`);
+        Swal.fire(`El numero 1 es ${num1} y el numero 2 ${num2} la suma es ${sum}`);
     }
 
     else if(op==2){
         let res=num1-num2;
-        alert(`El numero 1 es ${num1} y el numero 2 ${num2} la resta es ${res}`)
+        Swal.fire(`El numero 1 es ${num1} y el numero 2 ${num2} la resta es ${res}`)
     }
 
     else if(op==3){
         let mul=num1*num2;
-        alert(`El numero 1 es ${num1} y el numero 2 ${num2} la multiplicación es ${mul}`)
+        Swal.fire(`El numero 1 es ${num1} y el numero 2 ${num2} la multiplicación es ${mul}`)
     }
 
     else if(op==4){
         let div=num1/num2;
-        alert(`El numero 1 es ${num1} y el numero 2 ${num2} la división es ${div}`)
+        Swal.fire(`El numero 1 es ${num1} y el numero 2 ${num2} la división es ${div}`)
     }
     
 }
@@ -44,14 +44,14 @@ let num2=parseInt(document.getElementById("num2").value);
     if(e.target.id=="suma"){
         console.log(`${num1}, ${num2}`);
         let sum = num1+num2;
-        alert(`${sum}`);
+        Swal.fire(`${sum}`);
         let texto=`<p><i class="fa-solid fa-check"></i></p>`;
         rta.innerHTML=texto; 
         rta.style.setProperty("font-size","80px");
     }
     else if(e.target.id=="resta"){
         let res = num1-num2;
-        alert(`${res}`);
+        Swal.fire(`${res}`);
         let texto=`<p><i class="fa-solid fa-xmark"></i></p>`;
         rta.innerHTML=texto;
         rta.style.setProperty("font-size","80px");

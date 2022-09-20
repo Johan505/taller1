@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: chartreuse;
+    font-family: 'Roboto',sans-serif;
+    font-size: 16px;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Itim',cursive;
+    color: darkgreen;
+}
+
+/* Estilos del formulario */
+
+.frm-container{
+    background-color: rgba(0, 0, 0, 0.7);
+    max-width: 40rem;
+    width: 100%;
+    color: whitesmoke;
+    padding: 2rem;
+    margin: 30px auto;
+    border-radius:3px ;
+}
+.frm-input{
+    width: 100%;
+    min-height:2rem;
+    padding: 0 1rem;
+    box-shadow: 2px 2px 3px black;
+    margin-top: 1rem;
+}
+.frm-input:focus{
+    outline: none;
+    border-color: lawngreen;
+    border-width: 5px;
+    border-style: solid;
+}
+#g-terminos{
+    margin: 1rem;
+}
+.frm-checkbox{
+    margin: 1rem;
+}
+.btn-enviar{
+    background: linear-gradient(lawngreen,chartreuse);
+    padding: 0.5rem 1rem;
+    border-radius: 3px;
+    font-weight: bold;
+    width: 100%;
+    
+}
+.btn-enviar:hover{
+    background: linear-gradient(darkgreen,green);
+}
+.msn-error{
+    font-size: 11px;
+    color: chartreuse;
+    visibility: hidden;
+}
+.form-group{
+    margin: 0.5rem 0;
+}
+label{
+    font-weight: 500;
+}
+.form-group-input{
+    position: relative;
+}
+.frm-icono{
+    position: absolute;
+    right: 1rem;
+    bottom: 1.7rem;
+    color: chartreuse;
+    z-index: 100;
+}
+.success .frm-icono{
+    color: chartreuse;
+}
+.error .frm-icono{
+ color: red;
+}
+.msn-error-visible{
+    visibility: visible; 
+    opacity: 1;
+}
