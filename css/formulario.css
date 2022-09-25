@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #424141;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+
+.container{
+    display: grid;
+    grid-template: 
+        "dashboard formularios" 100% /
+            auto       70%;
+}
+
+.dashboard{
+    grid-area: dashboard;
+    background-color: #6C476C;
+    text-align: center;
+}
+
+.dashboard h1{
+    margin: 40px;
+    font-size: 40px;
+    color: white;
+    
+}
+
+.options_menu a{
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+}
+.options_menu .opcion{
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.container-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formularios{
+    grid-area: "formularios";
+    width: 400px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.formularios h1{
+    text-align: center;
+    padding: 20px;
+    border-bottom: 1px solid silver;
+}
+
+.formularios .formulario{
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.formulario .group-form{
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+}
+
+.group-form input{
+    width: 100%;
+    padding: 0 5px;
+    margin-top: 20px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.group-form label{
+    position: absolute;
+    left: 5px;
+    color: #5b5757;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+}
+
+select{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+    color: #5b5757;
+}
+
+button[type="submit"]{
+    width: 100%;
+    height: 50px;
+    border: 1px solid;
+    background-color: #6C476C;
+    border-radius: 20px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    outline: none;
+}
+
+.opcion:hover{
+    animation: shadow-pulse 1000ms 1;
+    background-color: #B267B2;
+
+}
+
+
+/*Validaciones*/
+
+.form-input-error {
+	font-size: 12px;
+	margin-bottom: 0;
+	display: none;
+}
+
+.form-input-error-activo {
+	display: block;
+}
+
+.form-valid-estado {
+	position: absolute;
+	right: 10px;
+	bottom: 35%;
+	z-index: 100;
+	font-size: 16px;
+	opacity: 0;
+}
+
+.form-checkbox {
+	margin-right: 10px;
+}
+
+.form-msg {
+	height: 45px;
+	line-height: 45px;
+	background: #F66060;
+	padding: 0 15px;
+	border-radius: 3px;
+	display: none;
+}
+
+.form-msg-activo {
+	display: block;
+}
+
+.form-msg p {
+	margin: 0;
+}
+
+.group-form-btn-enviar {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.formulario__btn:hover {
+	box-shadow: 3px 0px 30px rgba(163,163,163, 1);
+}
+
+.form-msg-exito {
+	font-size: 14px;
+	color: #119200;
+	display: none;
+}
+
+.form-msg-exito-activo {
+	display: block;
+}
+
+/* ----- -----  Estilos para Validacion ----- ----- */
+.group-form-correcto .form-valid-estado {
+	color: #1ed12d;
+	opacity: 1;
+}
+
+.group-form-incorrecto .form-label {
+	color: #bb2929;
+}
+
+.group-form-incorrecto .form-valid-estado {
+	color: #bb2929;
+	opacity: 1;
+}
+
+.group-form-incorrecto .form-input {
+	border: 3px solid #bb2929;
+}
+
+
+
+
+/*-----SELECT------*/
+
+.select{
+   background-color: #c2c3c5;
+   border-radius: 25px;
+   padding: 10px;
+   padding-left: 40px;
+   margin-top: -5em;
+   position: relative;
+   width: 80%;
+   display: flex;
+   justify-content: center;
+   overflow: hidden;
+}
+
+
+.box-input .terminos{
+   font-size: 50px;
+}
